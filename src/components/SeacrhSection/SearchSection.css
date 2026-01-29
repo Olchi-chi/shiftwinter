@@ -1,0 +1,9 @@
+.search-section{
+    margin-top: 48px;
+    gap: 16px;
+    padding: 24px;
+    padding-top: 16px;
+    background-color: #F3F4F6;
+    border-radius: 16px;
+    display: inline-flex;
+}

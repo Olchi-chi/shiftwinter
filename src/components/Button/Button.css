@@ -1,0 +1,16 @@
+.button {
+  display: inline-flex;
+  height: 56px;
+  align-items: center;
+  gap: 8px; /* отступ между иконкой и текстом */
+  padding: 16px 44px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  background-color: #344051;
+  color: #FFFFFF;
+  margin-top: auto;
+}

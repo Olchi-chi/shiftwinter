@@ -1,0 +1,16 @@
+header{
+    margin: 0 -240px;
+    padding: 24px 240px;
+    display: flex;
+    border-bottom: 1px solid #CED2DA;
+    max-width: 1140px;
+}
+
+.main__action{
+    display: inline-flex;
+    gap:32px;
+}
+
+.main__action.secondary{
+    margin-left: 460px;
+}

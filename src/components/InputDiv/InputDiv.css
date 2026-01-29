@@ -1,0 +1,33 @@
+.input-div h4{
+    margin: 0px;
+    font-weight: 400;
+    font-style:normal;
+    font-size: 14px;
+    margin-bottom: 6px;
+    line-height: 20px;
+}
+
+.input-div__search{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-div__wrapper{
+    border-radius: 8px;
+    border: 1px solid #CED2DA;
+    background-color: white;
+    font-size: 16px;
+    line-height: 24px;
+    color: #637083;
+    padding: 12px;
+    width: 345px;
+}
+
+.input-div__icon{
+     position: absolute;
+      z-index: 2;
+      margin-left: 333px;
+      margin-top: 10px;
+     /* margin-top: -36px; */
+     /* margin-right: auto; */
+}
