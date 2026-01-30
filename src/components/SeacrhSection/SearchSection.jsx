@@ -13,7 +13,7 @@ export default function SearchSection(){
             label="Даты аренды"
             placeholder ="10 - 24 апреля 2025 (14 дней)"
             svgIcon={<CalendarIcon/>}/>
-            <Button>
+            <Button variant="filter">
                < FilterIcon/>
                <span>Фильтры</span>
             </Button>

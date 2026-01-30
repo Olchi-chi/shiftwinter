@@ -1,4 +1,5 @@
-// import './CatalogCardCar.css';
+import './CatalogCardCar.css';
+import Button from '../Button/Button';
 
 const API_BASE_URL = 'https://shift-intensive.ru/api/';
 
@@ -21,22 +22,18 @@ export default function CatalogCardCar({ car }) {
       </div>
       
       <div className="catalog-card__info">
-        <h3 className="catalog-card__title">
-          {car.brand} {car.name}
-        </h3>
-        
-        <div className="catalog-card__details">
-          <div className="catalog-card__detail">
-            <span className="catalog-card__detail-value">{transmissionText}, 2.5л </span>
-          </div>
-          
-          <div className="catalog-card__detail">
-            <span className="catalog-card__detail-value catalog-card__price">
-              {car.price.toLocaleString('ru-RU')} ₽
-            </span>
-          </div>
-        </div>
+          <h3>
+            {car.name} 
+          </h3>
+          <span>{transmissionText}, 2.5л </span>
       </div>
+      <div className="catalog-card__prices">
+          <h3 >
+            {car.price.toLocaleString('ru-RU')} ₽
+          </h3>
+          <span className="catalog-card__fourteen">{(car.price*14).toLocaleString('ru-RU')} ₽ за 14 дней</span>
+      </div>
+      <Button variant="catalog">Выбрать</Button>
     </div>
   );
 }

@@ -1,0 +1,9 @@
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 25px;    /* вертикальный отступ */
+  list-style: none; /* убираем маркеры списка */
+  margin-right: 405px;
+  margin-left: -35px;
+  
+}

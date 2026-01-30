@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import CatalogCardCar from './CatalogCardCar/CatalogCardCar';
-// import './Catalog.css';
+import CatalogCardCar from '../CatalogCardCar/CatalogCardCar';
+import './CatalogSection.css';
 
 export default function Catalog() {
   const [cars, setCars] = useState([]);
@@ -39,14 +39,14 @@ export default function Catalog() {
   }
 
   return (
-    <div className="catalog">
-      <h1 className="catalog-title">Каталог автомобилей</h1>
-      
-      <div className="catalog-grid">
-        {cars.map(car => (
-          <CatalogCardCar key={car.id} car={car} />
-        ))}
-      </div>
+    <div className="catalog">      
+      <ul className="catalog-grid">
+  {cars.map(car => (
+    <li key={car.id}>
+      <CatalogCardCar car={car} />
+    </li>
+  ))}
+</ul>
     </div>
   );
 }

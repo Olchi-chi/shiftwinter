@@ -2,7 +2,6 @@
   display: inline-flex;
   height: 56px;
   align-items: center;
-  gap: 8px; /* отступ между иконкой и текстом */
   padding: 16px 44px;
   border: none;
   border-radius: 16px;
@@ -10,7 +9,29 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
-  background-color: #344051;
+  background-color: #DB0019;
   color: #FFFFFF;
+}
+
+.button:hover{
+  background-color: #e54a5c;
+}
+
+.button_filter{
+  
+  gap: 8px; /* отступ между иконкой и текстом */
+  padding: 16px 44px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  background-color: #344051;
   margin-top: auto;
+}
+
+.button_filter:hover{
+  background-color: #555c66;
+}
+
+.button_catalog{
+  padding: 16px 114px;
 }
