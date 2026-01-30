@@ -1,11 +1,9 @@
 import SearchSection from '../components/SeacrhSection/SearchSection'
 import CatalogSection from '../components/CatalogSection/CatalogSection'
 
-export default function Catalog() {
+export default function CarDetail() {
     return(
         <main>
-         <SearchSection/>
-           <CatalogSection/>
        </main>
     )
 
