@@ -1,0 +1,54 @@
+.input-div h4{
+    margin: 0px;
+    font-weight: 400;
+    font-style:normal;
+    font-size: 14px;
+    margin-bottom: 6px;
+    line-height: 20px;
+}
+
+.input-div__search{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-div__wrapper{
+    border-radius: 8px;
+    border: 1px solid #CED2DA;
+    background-color: white;
+    font-size: 16px;
+    line-height: 24px;
+    color: #637083;
+    padding: 12px;
+    width: 321px;
+}
+
+.input-div__icon{
+     position: absolute;
+      z-index: 2;
+      margin-left: 312px;
+      margin-top: 12px;
+}
+
+/* Текст ошибки под полем */
+.input-error-text {
+    color: #ff4d4f;
+    font-size: 12px;
+    margin-top: 4px;
+    display: block;
+    min-height: 16px;
+    line-height: 1.4;
+}
+
+/* Подсветка поля с ошибкой */
+.input-div__wrapper.input-error,
+.input-div--error .input-div__wrapper {
+    border-color: #ff4d4f !important;
+    background-color: #fff2f0;
+}
+
+.input-div__wrapper.input-error:focus {
+    border-color: #ff4d4f !important;
+    box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.2);
+    outline: none;
+}

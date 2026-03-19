@@ -1,0 +1,9 @@
+#root {
+  width: 1440px;
+  margin: 0 auto;
+  gap: 48px;
+}
+
+.container{
+  margin: 0 240px;
+}

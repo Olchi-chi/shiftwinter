@@ -1,0 +1,9 @@
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 25px;   
+  list-style: none; 
+  margin-right: 405px;
+  margin-left: -35px;
+  
+}

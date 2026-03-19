@@ -1,0 +1,39 @@
+.catalog-card{
+    max-width: 299px;
+    max-height: 436px;
+    background-color: #F3F4F6;
+    padding: 10px;
+    border-radius: 16px;
+    gap: 24px;
+}
+
+.catalog-card span{
+    font-size: 16px;
+    line-height: 24px;
+    color: #344051;
+}
+
+.catalog-card__image{
+    width: 299px;
+    height: 220px;
+    border-radius: 16px;
+}
+
+.catalog-card__info{
+    display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.catalog-card__info h3{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.catalog-card__prices{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
