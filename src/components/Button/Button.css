@@ -18,8 +18,7 @@
 }
 
 .button_filter{
-  
-  gap: 8px; /* отступ между иконкой и текстом */
+  gap: 8px; 
   padding: 16px 44px;
   font-size: 16px;
   line-height: 24px;
@@ -34,4 +33,21 @@
 
 .button_catalog{
   padding: 16px 114px;
+}
+
+.button_brone-back{
+  padding: 16px 79px;
+  background-color: #FFFFFF;
+  border: 1px solid #CED2DA;
+  color: #344051;
+  font-weight: 600;
+}
+
+
+.button_brone-back:hover{
+  background-color: #e5e5e5;
+}
+
+.button_brone{
+    padding: 16px 32px;
 }

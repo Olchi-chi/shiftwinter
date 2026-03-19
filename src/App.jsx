@@ -7,7 +7,9 @@ import Header from './components/Header/Header';
 // import Catalog from './components/CatalogSection/CatalogSection'
 
 import Catalog from './pages/Catalog';
-import CarDetail from './pages/CarDetail';
+import CarDetail from './pages/CarDetail/CarDetail';
+import Authorization from './pages/Auth/Auth';
+import Profile from './pages/Profile/Profile';
 
 function App() {
   return (
@@ -22,15 +24,19 @@ function App() {
       
 
     // </>
-
-    <BrowserRouter>
+    <div className="container">
+<BrowserRouter >
       <Header /> 
       
       <Routes>
-        <Route штвуч path="/home" element={<Catalog />} />
+        <Route path="/home" element={<Catalog />} />
         <Route path="/car/:id" element={<CarDetail />} />
+        <Route path="/auth" element={<Authorization />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </BrowserRouter>
+    </div>
+    
   )
 }
 

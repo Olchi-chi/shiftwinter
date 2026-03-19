@@ -11,14 +11,12 @@ export default function CatalogCardCar({ car }) {
 
   const transmissionText = car.transmission === 'automatic' ? 'Автомат' : 'Механика';
    const handleSelect = () => {
-    console.log('Кнопка нажата! ID:', car.id); // Отладка
-    console.log('navigate:', navigate);
     navigate(`/car/${car.id}`);
   };
 
   return (
     <div className="catalog-card">
-      <div className="catalog-card__image-wrapper">
+      <div>
         <img 
           src={coverImage} 
           alt={`${car.brand} ${car.name}`} 
@@ -36,7 +34,7 @@ export default function CatalogCardCar({ car }) {
           <h3>
             {car.price.toLocaleString('ru-RU')} ₽
           </h3>
-          <span className="catalog-card__fourteen">{(car.price*14).toLocaleString('ru-RU')} ₽ за 14 дней</span>
+          <span>{(car.price*14).toLocaleString('ru-RU')} ₽ за 14 дней</span>
       </div>
       <Button variant="catalog" onClick={handleSelect}>
         Выбрать

@@ -20,14 +20,35 @@
     line-height: 24px;
     color: #637083;
     padding: 12px;
-    width: 345px;
+    width: 321px;
 }
 
 .input-div__icon{
      position: absolute;
       z-index: 2;
-      margin-left: 333px;
-      margin-top: 10px;
-     /* margin-top: -36px; */
-     /* margin-right: auto; */
+      margin-left: 312px;
+      margin-top: 12px;
+}
+
+/* Текст ошибки под полем */
+.input-error-text {
+    color: #ff4d4f;
+    font-size: 12px;
+    margin-top: 4px;
+    display: block;
+    min-height: 16px;
+    line-height: 1.4;
+}
+
+/* Подсветка поля с ошибкой */
+.input-div__wrapper.input-error,
+.input-div--error .input-div__wrapper {
+    border-color: #ff4d4f !important;
+    background-color: #fff2f0;
+}
+
+.input-div__wrapper.input-error:focus {
+    border-color: #ff4d4f !important;
+    box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.2);
+    outline: none;
 }
